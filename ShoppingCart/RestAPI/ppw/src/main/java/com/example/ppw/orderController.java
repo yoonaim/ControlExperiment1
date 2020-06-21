@@ -18,6 +18,22 @@ public class switchcase4 {
         potongan1 = (total -((total*5)/100));
         potongan2 = (total - ((total*10)/100));
         potongan3 = (total - ((total*15)/100));
+        //condition
+        if(total >= 200000){
+        System.out.println("Total Bayar (Diskon 15%) : Rp "+ potongan3);
+        }else if(total >= 100000 ){
+        System.out.println("Total Bayar (Diskon 10%) : Rp "+ potongan2);
+        }else if(total >= 50000){
+        System.out.println("Total Bayar (Diskon 5%) : Rp "+ potongan1);
+        }
+        if (jumlah >= 50 && total >= 200000) {
+        System.out.println("Total Bayar (Diskon 5%) : Rp " +(potongan3-((potongan3*5)/100)));
+        }else if (jumlah >= 50 && total >= 100000) {
+        System.out.println("Total Bayar : Rp "+ (potongan2-((potongan2*5)/100)));
+        }else if (jumlah >= 50 && total >= 50000){
+        System.out.println("Total Bayar (Diskon 5%) : Rp "+ (potongan1-((potongan1*5)/100)));
+        }else if (jumlah >= 50){
+        System.out.println("Total Bayar (Diskon 5%) : Rp "+ (total-((total*5)/100)));}
 
     }
 }
