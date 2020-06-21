@@ -1,12 +1,12 @@
 //fungsi untuk menambah belanja
 package com.example.ppw.controller;
 
+//library yang dibutuhkan
 import com.example.ppw.model.orders;
 import com.example.ppw.repository.ordersRepo;
 import com.example.ppw.repository.testNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 
 import java.util.List;
 import java.util.Optional;
@@ -56,29 +56,36 @@ public class ContohPercabanganSwitch {
       char grade = 'A';
         
       switch(grade) {
-         case 'A' :
+        case 'A' :
             System.out.println("Perfect!");
             // Statements
             break;
             // You can have any number of case statements.
-         case 'B' :
+        
+        case 'B' :
             System.out.println("Excellent!");
             // Statements
             break;
-         case 'C' :
+        
+        case 'C' :
             System.out.println("Well done");
             break;
-         case 'D' :
+        
+        case 'D' :
             System.out.println("You passed");
-         case 'F' :
+        
+        case 'F' :
             System.out.println("Better try again");
             break;
-         default :
+
+        default :
             System.out.println("Invalid grade");
       }
       System.out.println("Your grade is " + grade);
    }
 }
+
+//class ini untuk mengeluarkan angka
 class CetakAngka{
 /*contoh membuat variabel dan scanner
  contoh komentar*/
