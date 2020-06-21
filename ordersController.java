@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/shoppingcart")
+//ini untuk menambah case ketidka ada kondisi pembelian lebih dari satu
 public class ContohKondisi {
 
     public static void main(String[] args) {
