@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/shoppingcart")
+//ini untuk menambah case ketidka ada kondisi pembelian lebih dari satu
 public class ContohKondisi {
 
     public static void main(String[] args) {
@@ -39,6 +40,7 @@ class CetakAngka{
     }
 }
 
+
 public class ContohIfElse {
 
     public static void main(String[] args) {
@@ -59,34 +61,4 @@ public class ContohIfElse {
         }
     }
 
-}
-public class ContohPercabanganSwitch {
-
-   public static void main(String args[]) {
-
-      char grade = 'A';
-        
-      switch(grade) {
-         case 'A' :
-            System.out.println("Perfect!");
-            // Statements
-            break;
-            // You can have any number of case statements.
-         case 'B' :
-            System.out.println("Excellent!");
-            // Statements
-            break;
-         case 'C' :
-            System.out.println("Well done");
-            break;
-         case 'D' :
-            System.out.println("You passed");
-         case 'F' :
-            System.out.println("Better try again");
-            break;
-         default :
-            System.out.println("Invalid grade");
-      }
-      System.out.println("Your grade is " + grade);
-   }
 }
