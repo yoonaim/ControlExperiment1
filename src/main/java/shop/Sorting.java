@@ -26,10 +26,24 @@ public class Sorting {
         }});
         System.out.println(inventory);
         
+        // reshuffling things a little
+        inventory.set(1, new Apple(20, "red"));
         
+        // 3
+        // [Apple{color='red', weight=20}, Apple{color='green', weight=30}, Apple{color='green', weight=155}]
+        inventory.sort((a1, a2) -> a1.getWeight().compareTo(a2.getWeight()));
+        System.out.println(inventory);
         
+        // reshuffling things a little
+        inventory.set(1, new Apple(10, "red"));
         
-        public static class Apple {
+        // 4
+        // [Apple{color='red', weight=10}, Apple{color='red', weight=20}, Apple{color='green', weight=155}]
+        inventory.sort(comparing(Apple::getWeight));
+        System.out.println(inventory);       
+    }
+                
+    public static class Apple {
         private Integer weight = 0;
         private String color = "";
 
