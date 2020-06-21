@@ -46,7 +46,21 @@ public class Sorting {
             this.weight = weight;
         }
 
-            
+        public String getColor() {
+            return color;
+        }
+
+        public void setColor(String color) {
+            this.color = color;
+        }
+
+        public String toString() {
+            return "Apple{" +
+                   "color='" + color + '\'' +
+                   ", weight=" + weight +
+                   '}';
+        }
+    }
             
     static class AppleComparator implements Comparator<Apple> {
         public int compare(Apple a1, Apple a2){
