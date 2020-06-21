@@ -28,6 +28,7 @@ public class ContohKondisi {
     }
 }
 
+//Untuk menambah Pelanggan
 class CetakAngka{
 /*contoh membuat variabel dan scanner
  contoh komentar*/
