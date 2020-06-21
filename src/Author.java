@@ -11,3 +11,22 @@ public @interface Author {
     String name();
 
 }
+
+/* This is the beginning of a
+multi-line comment
+this is the end */
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Authors {
+
+    Author[] value();
+
+}
+
+
+
+
+  /* The Beginning
+   This is my first computer program
+   written entirely in Java. I am so
+   proud of myself
+  The End */
