@@ -34,6 +34,6 @@ public class switchcase4 {
         System.out.println("Total Bayar (Diskon 5%) : Rp "+ (potongan1-((potongan1*5)/100)));
         }else if (jumlah >= 50){
         System.out.println("Total Bayar (Diskon 5%) : Rp "+ (total-((total*5)/100)));}
-
+//tambahan terbaru
     }
 }
